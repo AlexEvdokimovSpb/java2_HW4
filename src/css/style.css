@@ -1,0 +1,32 @@
+.root{
+    -fx-font-size: 16;
+}
+
+.button {
+    -fx-background-color: black;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+}
+
+.button:hover {
+    -fx-background-color: red;
+    -fx-text-fill: black;
+ }
+
+.text-area {
+    -fx-background-color: orange;
+    -fx-control-inner-background: black;
+    -fx-text-fill: red;
+    -fx-highlight-text-fill: orange;
+    -fx-highlight-fill: yellow;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-highlight-text-fill: orange;
+    -fx-highlight-fill: yellow;
+}

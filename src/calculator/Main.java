@@ -1,4 +1,4 @@
-package sample;
+package calculator;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +12,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Пиратский чат");
-        primaryStage.setScene(new Scene(root, 320, 600));
+        primaryStage.setTitle("КАЛЬКУЛЯТОР ПУЛЬСА");
+        primaryStage.setScene(new Scene(root, 400, 700));
         primaryStage.show();
     }
 

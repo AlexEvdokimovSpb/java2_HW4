@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="calculator.Controller">
+
+    <stylesheets>
+        <URL value="@/css/styleCalculator.css"/>
+    </stylesheets>
+
+
+    <top>
+
+        <VBox>
+
+            <Label text=" "/>
+
+            <HBox>
+                <Label text="  Введите ваш возраст: "/>
+                <TextField fx:id="enterYouAge" prefWidth="50" />
+                <Button onAction="#onEnterYouAge" text="Ввод" />
+            </HBox>
+
+            <Label text=" "/>
+
+            <HBox>
+                <Label text="  Введите пульс покоя: "/>
+                <TextField fx:id="enterPulseRest" prefWidth="50" />
+                <Button onAction="#onEnterPulseRest" text="Ввод" />
+            </HBox>
+
+            <Label text=" "/>
+
+            <TextArea fx:id="textOutputData" prefWidth="100" prefHeight="70"/>
+
+            <Label text=" "/>
+
+            <HBox>
+                <Button onAction="#onCalculatePulseArea" text="Рассчитать пульсовые зоны" />
+            </HBox>
+
+
+            <TextArea fx:id="textCalculateData" prefWidth="400" prefHeight="400"/>
+
+        </VBox>
+
+    </top>
+
+</BorderPane>
